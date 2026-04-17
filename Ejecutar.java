@@ -13,7 +13,7 @@ public class Ejecutar {
         System.out.print("Introduce el nombre del jugador 2: "); // Pide el nombre del segundo jugador
         String nombre2 = scanner.nextLine(); // Lee el nombre del segundo jugador
 
-        JuegoLucha juego = new JuegoLucha(nombre1, nombre2); // Crea una instancia del juego con los nombres
-        juego.iniciarPelea(); // Inicia la pelea
+        JuegoFacade juego = new JuegoFacade(nombre1, nombre2);
+        juego.jugar();
     }
 }
